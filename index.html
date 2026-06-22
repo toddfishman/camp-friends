@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Camp Friends — Neighborhood summer camp, run by parents. We do the rest.</title>
+  <meta name="description" content="Camp Friends is plug-and-play camp infrastructure for parents. You invite the kids and pick the fun — we handle payments, allowances, waivers, sign-ups, and a week of ready-to-go activities." />
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:title" content="Camp Friends — Summer camp, run by the neighborhood" />
+  <meta property="og:description" content="Plug-and-play camp infrastructure for parents. Invite the kids, pick the fun — we handle the rest." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/img/crew.jpg" />
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="top">
+    <a class="brand" href="#top" aria-label="Camp Friends home">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 40 40" width="34" height="34">
+          <circle cx="20" cy="20" r="20" fill="var(--sun)"/>
+          <path d="M20 8 L31 30 L9 30 Z" fill="var(--grass)"/>
+          <path d="M20 8 L25.5 19 L14.5 19 Z" fill="#fff" opacity=".9"/>
+          <rect x="18.6" y="8" width="2.8" height="24" rx="1.4" fill="var(--ink)"/>
+        </svg>
+      </span>
+      <span class="brand-name">Camp&nbsp;Friends</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#how">How it works</a>
+      <a href="#included">What's included</a>
+      <a href="#why">Why parents love it</a>
+      <a class="btn btn-sm" href="#start">Start a camp</a>
+    </nav>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero-img" style="background-image:url('assets/img/crew.jpg')" role="img" aria-label="The neighborhood crew on day one of Camp Friends"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content reveal">
+      <span class="kicker">🏕️ Plug-and-play neighborhood camp</span>
+      <h1>Summer camp,<br><span class="hl">run by the&nbsp;neighborhood.</span></h1>
+      <p class="lede">Missed the camp sign-ups? Kids climbing the walls at home? Round up the neighborhood kids, pick what's fun — and let Camp Friends handle the rest.</p>
+      <div class="hero-cta">
+        <a class="btn btn-lg" href="#start">Start your camp</a>
+        <a class="btn btn-ghost btn-lg" href="#proof">See day one ↓</a>
+      </div>
+      <p class="hero-note">Local · Trustworthy · Flexible · Rain-or-shine</p>
+    </div>
+  </section>
+
+  <!-- ============ PROBLEM → IDEA ============ -->
+  <section class="band band-cream story">
+    <div class="wrap narrow reveal">
+      <h2 class="section-title">It started with two moms and a problem.</h2>
+      <p class="big-text">
+        A bunch of neighborhood families missed the summer-camp sign-ups. Suddenly the kids were home, bored, and bummed — and so were the parents.
+      </p>
+      <p class="big-text">
+        So two moms made a plan: gather the kids, run a <strong>week-long camp right in the neighborhood</strong>. Each parent takes a few hours and picks the day — hiking, free play, swimming, learning about animals and trees, even setting up little lemonade-stand businesses. Older siblings and teens help lead.
+      </p>
+      <p class="big-text accent">
+        Today was day one. <strong>Every single kid loved it.</strong>
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ PROOF / GALLERY ============ -->
+  <section class="band proof" id="proof">
+    <div class="wrap reveal">
+      <span class="eyebrow">Day one — for real</span>
+      <h2 class="section-title center">This actually happened today.</h2>
+      <p class="subtitle center">No stock photos. Just neighborhood kids having the best day.</p>
+    </div>
+
+    <div class="gallery wrap">
+      <figure class="g-item g-video reveal" data-type="video">
+        <video poster="assets/img/day1-poster.jpg" muted loop playsinline preload="none">
+          <source src="assets/video/day1.mp4" type="video/mp4" />
+        </video>
+        <span class="play-badge" aria-hidden="true">▶</span>
+        <figcaption>Pool day — the water slide was a hit</figcaption>
+      </figure>
+      <figure class="g-item reveal" data-type="img" data-src="assets/img/pool.jpg">
+        <img src="assets/img/pool.jpg" alt="Three campers in goggles at the pool" loading="lazy" />
+        <figcaption>Swim crew, ready to go</figcaption>
+      </figure>
+      <figure class="g-item reveal" data-type="img" data-src="assets/img/candyshop.jpg">
+        <img src="assets/img/candyshop.jpg" alt="A camper spending his allowance at the candy shop" loading="lazy" />
+        <figcaption>Allowance day at the candy shop</figcaption>
+      </figure>
+      <figure class="g-item reveal" data-type="img" data-src="assets/img/chill.jpg">
+        <img src="assets/img/chill.jpg" alt="Four campers relaxing in camp chairs in the shade" loading="lazy" />
+        <figcaption>Snack break in the shade</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ HOW IT WORKS ============ -->
+  <section class="band band-sky" id="how">
+    <div class="wrap reveal">
+      <span class="eyebrow light">Stupid simple</span>
+      <h2 class="section-title center light">All you do is the fun part.</h2>
+      <p class="subtitle center light">Camp Friends is the boring infrastructure behind a great week. You bring the kids and the ideas — we handle everything that makes parents groan.</p>
+    </div>
+    <div class="wrap steps">
+      <div class="step reveal">
+        <span class="step-num">1</span>
+        <h3>Invite the kids</h3>
+        <p>Round up the neighborhood crew. Send one link — parents sign up and e-sign waivers in a tap.</p>
+      </div>
+      <div class="step reveal">
+        <span class="step-num">2</span>
+        <h3>Pick the curriculum</h3>
+        <p>Choose from ready-made days — hiking, sports, swimming, nature, mini-businesses — or build your own from our ideas.</p>
+      </div>
+      <div class="step reveal">
+        <span class="step-num">3</span>
+        <h3>We handle the money</h3>
+        <p>Automated payment links, and a daily allowance for the kids when a day costs a little (snacks, entry, supplies).</p>
+      </div>
+      <div class="step reveal">
+        <span class="step-num">4</span>
+        <h3>Show up &amp; have fun</h3>
+        <p>Parents rotate a few hours each. Siblings and teens help lead. Everybody wins.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHAT'S INCLUDED ============ -->
+  <section class="band band-cream" id="included">
+    <div class="wrap reveal">
+      <span class="eyebrow">The whole toolkit</span>
+      <h2 class="section-title center">Everything you'd dread, already done.</h2>
+      <p class="subtitle center">Camp Friends is plug-and-play camp infrastructure — the franchise-in-a-box for any neighborhood.</p>
+    </div>
+    <div class="wrap features">
+      <div class="feature reveal"><span class="f-ic">💳</span><h3>Payments &amp; allowances</h3><p>Collect from parents with an automated link. Set a daily allowance so kids can buy a treat or supplies — tracked for you.</p></div>
+      <div class="feature reveal"><span class="f-ic">📝</span><h3>Sign-ups &amp; waivers</h3><p>One link to register every family. Digital waivers and permissions, signed and stored — no paper, no chasing.</p></div>
+      <div class="feature reveal"><span class="f-ic">📚</span><h3>Lessons &amp; activities</h3><p>A library of ready-to-run days and lesson plans — structured learning and unstructured play, balanced.</p></div>
+      <div class="feature reveal"><span class="f-ic">📍</span><h3>Geo-located ideas</h3><p>Suggestions tuned to where you live — the nearby pool, trail, park, splash pad, library, and free local gems.</p></div>
+      <div class="feature reveal"><span class="f-ic">🔁</span><h3>Volunteer rotation</h3><p>Schedule which parent leads which day, with a few hours each. Teens and siblings can sign up to help (or get paid).</p></div>
+      <div class="feature reveal"><span class="f-ic">☔</span><h3>Rain-or-shine plans</h3><p>Built-in backup days so weather never cancels camp. There's always a great plan B in your back pocket.</p></div>
+    </div>
+  </section>
+
+  <!-- ============ WHY PARENTS LOVE IT ============ -->
+  <section class="band" id="why">
+    <div class="wrap reveal">
+      <span class="eyebrow">Win · Win · Win</span>
+      <h2 class="section-title center">Why parents love Camp Friends</h2>
+    </div>
+    <div class="wrap perks">
+      <div class="perk reveal"><h3>It's local</h3><p>Camp is around the corner, not across town. No long drives, no logistics nightmare.</p></div>
+      <div class="perk reveal"><h3>It's trustworthy</h3><p>Run by people you already know — your neighbors, their kids, their teens. Familiar faces all week.</p></div>
+      <div class="perk reveal"><h3>The kids are already friends</h3><p>No "I don't know anyone" jitters. The crew already knows each other — or becomes best buds by Tuesday.</p></div>
+      <div class="perk reveal"><h3>Fun first, still learning</h3><p>Less rigid, more joy — but kids still teach, learn, and try new things every day.</p></div>
+      <div class="perk reveal"><h3>Flexible &amp; inclusive</h3><p>Any age mix, any budget, any schedule. Free days, low-cost days — everyone's welcome.</p></div>
+      <div class="perk reveal"><h3>Weather-proof</h3><p>Rain doesn't shut it down. There's always a backup plan ready to go.</p></div>
+    </div>
+  </section>
+
+  <!-- ============ WHO IT'S FOR ============ -->
+  <section class="band band-coral">
+    <div class="wrap narrow center reveal">
+      <h2 class="section-title light">Made for procrastinating parents <span class="nowrap">&amp; bored kids.</span></h2>
+      <p class="big-text light">Missed the sign-up window? Camp filled up? Just want something better than a screen all summer? Camp Friends turns "we forgot to plan anything" into the best week of the summer — in about ten minutes of setup.</p>
+      <a class="btn btn-lg btn-light" href="#start">I want this for my neighborhood</a>
+    </div>
+  </section>
+
+  <!-- ============ START / CTA FORM ============ -->
+  <section class="band band-cream" id="start">
+    <div class="wrap narrow reveal">
+      <span class="eyebrow center">Get started</span>
+      <h2 class="section-title center">Start your Camp Friends</h2>
+      <p class="subtitle center">Tell us your neighborhood and we'll get you set up for a week the kids will be talking about all summer.</p>
+
+      <form class="signup" id="signupForm" novalidate>
+        <div class="field">
+          <label for="name">Your name</label>
+          <input type="text" id="name" name="name" placeholder="Jordan Rivera" required />
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@email.com" required />
+        </div>
+        <div class="field">
+          <label for="place">Neighborhood / city</label>
+          <input type="text" id="place" name="place" placeholder="Maple Heights, Seattle" />
+        </div>
+        <div class="field">
+          <label for="kids">How many kids (roughly)?</label>
+          <input type="text" id="kids" name="kids" placeholder="8–10 ages 6–11" />
+        </div>
+        <button type="submit" class="btn btn-lg btn-block">Get early access →</button>
+        <p class="form-fineprint">Opens your email app with the details ready to send. No account needed.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <div class="brand brand-foot">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" width="30" height="30">
+            <circle cx="20" cy="20" r="20" fill="var(--sun)"/>
+            <path d="M20 8 L31 30 L9 30 Z" fill="var(--grass)"/>
+            <path d="M20 8 L25.5 19 L14.5 19 Z" fill="#fff" opacity=".9"/>
+            <rect x="18.6" y="8" width="2.8" height="24" rx="1.4" fill="var(--ink)"/>
+          </svg>
+        </span>
+        <span class="brand-name">Camp Friends</span>
+      </div>
+      <p class="footer-tag">Neighborhood summer camp, run by parents. We do the rest.</p>
+      <p class="footer-small">© <span id="year"></span> Camp Friends · Made by neighbors, for neighbors.</p>
+    </div>
+  </footer>
+
+  <!-- ============ LIGHTBOX ============ -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lb-close" id="lbClose" aria-label="Close">×</button>
+    <img id="lbImg" src="" alt="" />
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

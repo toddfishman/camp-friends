@@ -1,0 +1,7 @@
+# Keep the giant original photos/videos out of the repo.
+# Only the web-optimized files in assets/ get published.
+media-raw/
+*.MOV
+*.JPEG
+.DS_Store
+Thumbs.db

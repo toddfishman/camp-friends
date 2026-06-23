@@ -71,17 +71,20 @@ img{max-width:100%;display:block}
 .nav-links a:not(.btn):hover{color:var(--ink)}
 
 /* ---------- Hero ---------- */
-.hero{position:relative;min-height:100vh;display:flex;align-items:flex-end;overflow:hidden;color:#fff}
-.hero-img{position:absolute;inset:0;background-size:cover;background-position:center 32%;transform:scale(1.04)}
+.hero{position:relative;min-height:100vh;display:flex;align-items:flex-start;justify-content:flex-start;overflow:hidden;color:#fff}
+.hero-img{position:absolute;inset:0;background-size:cover;background-position:center 42%;transform:scale(1.04)}
 .hero-overlay{position:absolute;inset:0;
-  background:linear-gradient(180deg,rgba(42,45,52,.18) 0%,rgba(42,45,52,0) 26%,rgba(42,45,52,.10) 50%,rgba(42,45,52,.72) 80%,rgba(42,45,52,.92) 100%);}
-.hero-content{position:relative;z-index:2;max-width:760px;padding:0 22px 48px;margin:0 auto;width:100%}
+  background:
+    radial-gradient(135% 95% at 0% -8%, rgba(18,26,36,.74) 0%, rgba(18,26,36,.30) 34%, rgba(18,26,36,0) 60%),
+    linear-gradient(180deg, rgba(42,45,52,0) 55%, rgba(42,45,52,.78) 100%);}
+.hero-content{position:relative;z-index:2;max-width:560px;text-align:left;
+  padding:104px 22px 0 40px;margin:0;width:100%}
 .kicker{display:inline-block;background:var(--sun);color:var(--ink);font-weight:800;
   font-family:'Fredoka',sans-serif;padding:.4em .9em;border-radius:999px;font-size:.92rem;margin-bottom:14px;box-shadow:var(--shadow-sm)}
 .hero h1{font-size:clamp(2.3rem,5.4vw,3.9rem);font-weight:700;text-shadow:0 4px 24px rgba(0,0,0,.45)}
 .hero .hl{color:var(--sun)}
-.lede{font-size:clamp(1.05rem,2.1vw,1.3rem);max-width:600px;margin:14px 0 22px;font-weight:600;text-shadow:0 2px 14px rgba(0,0,0,.55)}
-.hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+.lede{font-size:clamp(1.05rem,2.1vw,1.3rem);max-width:420px;margin:14px auto 22px 0;font-weight:600;text-shadow:0 2px 14px rgba(0,0,0,.55)}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap;justify-content:flex-start}
 .hero-note{margin-top:18px;font-weight:700;letter-spacing:.04em;opacity:.9;font-size:.95rem}
 
 /* ---------- Bands / sections ---------- */
@@ -198,10 +201,10 @@ img{max-width:100%;display:block}
   .features,.perks,.steps{grid-template-columns:1fr}
   .signup{grid-template-columns:1fr;padding:24px}
   .hero{min-height:96vh}
-  .hero-img{background-position:center 14%}
+  .hero-img{background-position:center 62%}
   .hero h1{font-size:clamp(2.1rem,8vw,2.7rem)}
-  .lede{font-size:1.05rem;margin:12px 0 18px}
-  .hero-content{padding-bottom:40px}
+  .lede{font-size:1.05rem;margin:12px auto 18px 0}
+  .hero-content{padding:88px 20px 0 22px}
   .hero-cta{flex-direction:column}
   .hero-cta .btn{width:100%;text-align:center}
 }

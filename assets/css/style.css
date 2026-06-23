@@ -71,14 +71,20 @@ img{max-width:100%;display:block}
 .nav-links a:not(.btn):hover{color:var(--ink)}
 
 /* ---------- Hero ---------- */
-.hero{position:relative;min-height:100vh;display:flex;align-items:flex-start;justify-content:flex-start;overflow:hidden;color:#fff}
-.hero-img{position:absolute;inset:0;background-size:cover;background-position:center 42%;transform:scale(1.04)}
+.hero{position:relative;min-height:100vh;overflow:hidden;color:#fff}
+.hero-img{position:absolute;inset:0;background-size:cover;background-position:center 30%;transform:scale(1.04)}
 .hero-overlay{position:absolute;inset:0;
-  background:
-    radial-gradient(135% 95% at 0% -8%, rgba(18,26,36,.74) 0%, rgba(18,26,36,.30) 34%, rgba(18,26,36,0) 60%),
-    linear-gradient(180deg, rgba(42,45,52,0) 55%, rgba(42,45,52,.78) 100%);}
-.hero-content{position:relative;z-index:2;max-width:560px;text-align:left;
-  padding:104px 22px 0 40px;margin:0;width:100%}
+  background:linear-gradient(180deg,
+    rgba(18,26,36,.52) 0%,
+    rgba(18,26,36,.20) 15%,
+    rgba(18,26,36,0) 33%,
+    rgba(18,26,36,0) 57%,
+    rgba(42,45,52,.55) 80%,
+    rgba(42,45,52,.90) 100%);}
+.hero-inner{position:relative;z-index:2;display:flex;flex-direction:column;justify-content:space-between;
+  min-height:100vh;max-width:var(--maxw);margin:0 auto;padding:84px 40px 48px;width:100%}
+.hero-top{max-width:620px;text-align:left}
+.hero-bottom{max-width:560px;text-align:left}
 .kicker{display:inline-block;background:var(--sun);color:var(--ink);font-weight:800;
   font-family:'Fredoka',sans-serif;padding:.4em .9em;border-radius:999px;font-size:.92rem;margin-bottom:14px;box-shadow:var(--shadow-sm)}
 .hero h1{font-size:clamp(2.3rem,5.4vw,3.9rem);font-weight:700;text-shadow:0 4px 24px rgba(0,0,0,.45)}
@@ -201,10 +207,10 @@ img{max-width:100%;display:block}
   .features,.perks,.steps{grid-template-columns:1fr}
   .signup{grid-template-columns:1fr;padding:24px}
   .hero{min-height:96vh}
-  .hero-img{background-position:center 62%}
+  .hero-img{background-position:center 40%}
   .hero h1{font-size:clamp(2.1rem,8vw,2.7rem)}
-  .lede{font-size:1.05rem;margin:12px auto 18px 0}
-  .hero-content{padding:88px 20px 0 22px}
+  .lede{font-size:1.05rem;margin:12px auto 16px 0}
+  .hero-inner{padding:74px 22px 36px}
   .hero-cta{flex-direction:column}
   .hero-cta .btn{width:100%;text-align:center}
 }
